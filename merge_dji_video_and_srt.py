@@ -45,7 +45,7 @@ def merge_srt(subtitle_files, output_file):
                 else:
                     if "FrameCnt" in line:
                         # Regular expression pattern to match FrameCnt value
-                        pattern = r'FrameCnt: (\d+)'
+                        pattern = r'FrameCnt\s*:\s*(\d+)'
                         # Find FrameCnt value using regular expression
                         match = re.search(pattern, line)
                         if match:                          
